@@ -1,0 +1,29 @@
+src/
+    |_index.js
+
+Nosotros hariamos :
+function App (){
+
+}
+App ()
+y ahora hariamos:
+<App/>
+
+Siempre tiene que haber un retorno, una salida de la pantalla
+
+dos reglas
+1) Los componentes siempre son funciones (funcioncion comun, funcion flecha, una clase(no la vamos a usar))
+
+
+2)
+
+Funcion flecha se puede hacer de las dos maneras. 
+
+const App = () => {
+  return "Hola Mumdo Flecha"
+}
+o bien si retorna a una cosa sola
+const App = () => "Hola Mumdo Flecha"
+
+3) Siempre se retorna una sola cosa
+4)rafce

@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html , body , #root {
+    height: 100vh;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.lista {
+    display: inline-block;
+    background: rgb(49, 49, 73);
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.lista:hover {
+    background-color: black;
+}
+nav {
+    background: rgb(34, 34, 43);
+    padding: 10px;
+}
+
+footer {
+    padding: 15px 30px;
+    color: white;
+}
