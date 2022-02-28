@@ -9,24 +9,42 @@ html , body , #root {
 }
 
 body {
-    background-color: black;
+    background-color: white;
 }
 
-h1 {
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: rgb(30, 22, 94);
+    box-shadow: 0 2px 4px rgb(0,0,0,0.2);
+}
+
+.header nav a {
+    margin-left: 1rem;
+}
+
+.header__lista {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     color: white;
     font-size: 35px;
 }
 
-.lista {
+.nav__link {
     display: inline-block;
     background: rgb(49, 49, 73);
     color: white;
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-decoration: none;
 }
-.lista:hover {
+.nav__link:hover {
     background-color: black;
 }
 nav {
@@ -34,7 +52,16 @@ nav {
     padding: 10px;
 }
 
+main {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
 footer {
-    padding: 15px 30px;
+    padding: 0.5rem;
+    background-color: rgb(30, 22, 94);
+    text-align: center;
+    font-size: 0.8rem;
     color: white;
 }
+

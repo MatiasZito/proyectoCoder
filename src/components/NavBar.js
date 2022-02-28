@@ -1,15 +1,15 @@
 import React from 'react'
+import CartWidget from './CartWidget'
+import Nav from './Nav'
 
 const NavBar = () => {
     return (
-        <main>
-            <h1>Tienda para tus tatuajes</h1>
-            <nav>
-                <a class="lista" href="#" >Home</a>
-                <a class="lista" href="#" >Productos</a>
-                <a class="lista" href="#" >Nosotros</a>
-            </nav>
-        </main>
+        <header className="header">
+            <h1 className="header__lista">Tienda de tatuajes</h1>
+        <CartWidget/>
+        <Nav/>
+        </header>
+        
     )
 }
 
