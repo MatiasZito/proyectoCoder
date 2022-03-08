@@ -2,12 +2,9 @@ import React from 'react'
 import { useState } from 'react';
 
 
-const ItemCount = (props) => {
+const ItemCount = ( {initial, stock} ) => {
 
-    const initial  = 1
-    const stock = 10
-
-    const [estado, setEstado, onAdd] = useState(initial)
+    const [estado, setEstado] = useState(initial)
 
     const handleSumar = () =>{
         if(estado<stock) {
@@ -17,9 +14,8 @@ const ItemCount = (props) => {
       const handleRestar = () =>{
         setEstado(estado - 1 )
       }   
-      const handleHacer = () =>{
-        setEstado(1)
-        onAdd(estado)
+      const handleonAdd = () =>{
+        console.log({estado})
       }    
       
     return (
@@ -27,7 +23,7 @@ const ItemCount = (props) => {
             <h2>¡Contador de productos!</h2>
             <p>Mi Contador va : {estado} </p>
             <button onClick={handleSumar}>Sumar</button>
-            <button onClick={handleHacer}>Agregar</button>
+            <button onClick={handleonAdd}>Agregar</button>
             <button onClick={handleRestar}>Restar</button>
         </main>
     )

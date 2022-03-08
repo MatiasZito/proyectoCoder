@@ -10,7 +10,8 @@ const ItemListContainer = (greeting) => {
     <main>
         <h2>¡Bienvenido {nombre}!</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, saepe debitis. Delectus magnam aspernatur, reiciendis, temporibus nihil qui vel veniam voluptatibus incidunt voluptate sed minima, doloribus quasi sit odio quis.</p>
-        <ItemCount/>
+        <ItemCount initial={0} stock={10}/>
+        
     </main>
   );
 }
